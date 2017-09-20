@@ -1,18 +1,44 @@
 /* General tags*/
+body {
+  margin: 0px;
+}
 
-nav{
+/* ------------------ Navigation ---------------------*/
+
+nav {
   background-color: green;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
-ul{
-  display: flex;
 
+ul {
+  padding: 0px;
+  margin: 0px;
 }
-li{
+
+nav li {
+  width: 100%;
+  text-align: center;
   list-style: none;
-  padding-left: 1%;
 }
-
 
 .subnav{
   display: none;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 200%;
+}
+
+.menu {
+  font-size: 200%;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style: none;
 }
