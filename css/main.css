@@ -27,6 +27,10 @@ li {
   display: none;
 }
 
+.subnav{
+  display: none;
+}
+
 .subnav-conventions, .subnav-organisations, .searchbar{
   display: none;
 }
@@ -49,32 +53,7 @@ li a{
   display: block;
 }
 
-.fa, .fa-arrow-right{
-  display: inline-block;
-}
 
-#organisationsbutton, #conventionsbutton{
-  display: none;
-}
-
-/*-------- non mobile version ------- */
-@media screen and (min-width:600px){
-  ul{
-    flex-direction: row;
-    width: 100%;
-  }
-  li{
-    width: 100%;
-  }
-  li a, .searchbar{
-    display: block;
-  }
-  .menu{
-    display: none;
-  }
-
-
-}
 
 /* ------------------- eventcard ------------------- */
 
@@ -139,22 +118,24 @@ footer p {
 /* -------------- non mobile version -------------- */
 
 @media screen and (min-width:600px){
+
   ul{
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-
   li{
     width: 100%;
-  }
-
-  li a, .searchbar{
     display: block;
   }
-
+  .searchbar{
+    display: block;
+  }
   .menu{
     display: none;
+  }
+  .subnav{
+    display:block;
   }
 
   footer p {
