@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if(submenu.id == "organisationsbutton"){
        var organisationsubmenu = document.querySelector('.subnav-organisations');
        expand(organisationsubmenu);
-
     }
     else if(submenu.id == "conventionsbutton"){
       var coventionsubmenu = document.querySelector('.subnav-conventions');
       expand(coventionsubmenu);
-
     }
   }
 
@@ -45,5 +43,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       menu.style.display = "none";
 
     }
+  }
+
+  // check for class with the fa-arrow-right
+  function subMenuArrowCheck(){
+
   }
 });
