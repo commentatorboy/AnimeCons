@@ -44,32 +44,10 @@ li a {
   text-transform: uppercase;
   font-weight: bold;
   list-style: none;
-
 }
 
+/* ------------------- eventcard ------------------- */
 
-
-/*-------- non mobile version ------- */
-@media screen and (min-width:600px){
-  ul{
-    flex-direction: row;
-    width: 100%;
-  }
-  li{
-    width: 100%;
-  }
-  li a, .searchbar{
-    display: block;
-  }
-  .menu{
-    display: none;
-  }
-
-
-}
-
-
-/*---------- content --------------*/
 .container{
   padding-top: 5%;
 }
@@ -82,20 +60,62 @@ li a {
   flex: 1 auto;
 }
 
-.eventcontent{
-  order: 1;
-}
-.eventpicture{
-  order: 2;
-}
-
 .eventheader{
   display: flex;
   flex-direction: row;
-
 }
-/* ------------ footer ------------ */
 
+.eventheader h4 {
+  width: 50%;
+  padding: 0% 1%;
+}
+
+.eventheader h4:last-child {
+  text-align: right;
+}
+
+.eventbody {
+  display: flex;
+  flex-direction: row;
+}
+
+.eventinfo {
+  width: 70%;
+  padding: 1%;
+}
+
+.eventbody img {
+  width: 28%;
+  height: 28%;
+  padding: 1%;
+}
+
+/* -------------- non mobile version -------------- */
+
+@media screen and (min-width:600px){
+  ul{
+    flex-direction: row;
+    width: 100%;
+  }
+
+  li{
+    width: 100%;
+  }
+
+  li a, .searchbar{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+  }
+}
+
+/* ------------------- content ------------------- */
+
+
+
+/* -------------------- footer -------------------- */
 
 footer{
 
