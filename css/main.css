@@ -1,4 +1,5 @@
 /* ------------------ General tags ------------------ */
+
 body {
   margin: 0;
 }
@@ -27,14 +28,15 @@ li {
   display: none;
 }
 
-.subnav-conventions, .subnav-organisations, .searchbar{
+.subnav-conventions, .subnav-organisations, .searchbar {
   display: none;
 }
-.subnav-conventions, .subnav-organisations{
+
+.subnav-conventions, .subnav-organisations {
   font-size: 70%;
 }
 
-li a{
+li a {
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -49,40 +51,21 @@ li a{
   display: block;
 }
 
-.fa, .fa-arrow-right{
+.fa, .fa-arrow-right {
   display: inline-block;
 }
 
-#organisationsbutton, #conventionsbutton{
+#organisationsbutton, #conventionsbutton {
   display: none;
-}
-
-/*-------- non mobile version ------- */
-@media screen and (min-width:600px){
-  ul{
-    flex-direction: row;
-    width: 100%;
-  }
-  li{
-    width: 100%;
-  }
-  li a, .searchbar{
-    display: block;
-  }
-  .menu{
-    display: none;
-  }
-
-
 }
 
 /* ------------------- eventcard ------------------- */
 
-.container{
+.container {
   padding-top: 5%;
 }
 
-.eventcard{
+.eventcard {
   width: 80%;
   margin: auto;
   display: flex;
@@ -90,7 +73,7 @@ li a{
   flex: 1 auto;
 }
 
-.eventheader{
+.eventheader {
   display: flex;
   flex-direction: row;
 }
@@ -120,10 +103,6 @@ li a{
   padding: 1%;
 }
 
-/* ------------------- content ------------------- */
-
-
-
 /* -------------------- footer -------------------- */
 
 footer {
@@ -139,21 +118,21 @@ footer p {
 /* -------------- non mobile version -------------- */
 
 @media screen and (min-width:600px){
-  ul{
+  ul {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
 
-  li{
+  li {
     width: 100%;
   }
 
-  li a, .searchbar{
+  li a, .searchbar {
     display: block;
   }
 
-  .menu{
+  .menu {
     display: none;
   }
 
