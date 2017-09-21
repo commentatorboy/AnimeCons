@@ -1,4 +1,4 @@
-/* General tags*/
+/* ------------------ General tags ------------------ */
 body {
   margin: 0;
 }
@@ -29,9 +29,12 @@ li {
 .subnav-conventions, .subnav-organisations, .searchbar{
   display: none;
 }
+<<<<<<< HEAD
 .subnav-conventions, .subnav-organisations{
   font-size: 70%;
 }
+=======
+>>>>>>> 9dbc52ef7d51d2ddc7717b221be6ba65dbb005b9
 
 li a {
   display: none;
@@ -72,8 +75,8 @@ li a {
 
 }
 
+/* ------------------- eventcard ------------------- */
 
-/*---------- content --------------*/
 .container{
   padding-top: 5%;
 }
@@ -86,21 +89,74 @@ li a {
   flex: 1 auto;
 }
 
-.eventcontent{
-  order: 1;
-}
-.eventpicture{
-  order: 2;
-}
-
 .eventheader{
   display: flex;
   flex-direction: row;
-
 }
-/* ------------ footer ------------ */
+
+.eventheader h4 {
+  width: 50%;
+  padding: 0% 1%;
+}
+
+.eventheader h4:last-child {
+  text-align: right;
+}
+
+.eventbody {
+  display: flex;
+  flex-direction: row;
+}
+
+.eventinfo {
+  width: 70%;
+  padding: 1%;
+}
+
+.eventbody img {
+  width: 28%;
+  height: 28%;
+  padding: 1%;
+}
+
+/* ------------------- content ------------------- */
 
 
-footer{
 
+/* -------------------- footer -------------------- */
+
+footer {
+  text-align: center;
+  font-size: 80%;
+  margin-top: 1%;
+}
+
+footer p {
+  margin: 3px;
+}
+
+/* -------------- non mobile version -------------- */
+
+@media screen and (min-width:600px){
+  ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  li{
+    width: 100%;
+  }
+
+  li a, .searchbar{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  footer p {
+    display: inline-block;
+  }
 }
