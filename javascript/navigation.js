@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   console.log("loaded");
   var menubutton = document.getElementById('menubutton');
-  menubutton.onClick = expandMenu(menubutton);
+  menubutton.onclick = expandMenu;
 
   var conventionsbutton = document.getElementById('conventionsbutton');
-  conventionsbutton.onClick = expandMenu(conventionsbutton);
+  conventionsbutton.onclick = expandMenu;
 
   var organisationsbutton = document.getElementById('organisationsbutton');
-  organisationsbutton.onClick = expandMenu(organisationsbutton);
+  organisationsbutton.onclick = expandMenu
 
-  function expandMenu(button) {
+  function expandMenu(event) {
+    debugger;
     alert("expandMenu is called");
-    if (button.style.display == 'none'){
+    if (this.style.display == 'none'){
       button.style.display = 'block';
     } else {
       button.style.display = 'none';
