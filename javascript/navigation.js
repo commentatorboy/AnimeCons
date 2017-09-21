@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   organisationsbutton.onclick = expandMenu
 
   function expandMenu(event) {
-    debugger;
-    alert("expandMenu is called");
+
     if (this.style.display == 'none'){
-      button.style.display = 'block';
+      this.style.display = 'block';
     } else {
-      button.style.display = 'none';
+      this.style.display = 'none';
     }
   }
 });
