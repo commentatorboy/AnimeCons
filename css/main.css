@@ -28,15 +28,11 @@ li {
   display: none;
 }
 
-<<<<<<< HEAD
 .subnav{
   display: none;
 }
 
-.subnav-conventions, .subnav-organisations, .searchbar{
-=======
 .subnav-conventions, .subnav-organisations, .searchbar {
->>>>>>> c415f5673ac0697c3e3ef55a687bb9c6211d0b4a
   display: none;
 }
 
@@ -59,9 +55,6 @@ li a {
   display: block;
 }
 
-<<<<<<< HEAD
-
-=======
 .fa, .fa-arrow-right {
   display: inline-block;
 }
@@ -69,7 +62,6 @@ li a {
 #organisationsbutton, #conventionsbutton {
   display: none;
 }
->>>>>>> c415f5673ac0697c3e3ef55a687bb9c6211d0b4a
 
 /* ------------------- eventcard ------------------- */
 
