@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   organisationsbutton.onclick = expandSubMenu
 
   function expandMenu(event) {
-    var lia = document.querySelectorAll('li a');
+    var lia = document.querySelectorAll('li');
     for(i = 0; i < lia.length; i++)
     {
       var liaelement = lia[i];
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if(submenu.id == "organisationsbutton"){
        var organisationsubmenu = document.querySelector('.subnav-organisations');
        expand(organisationsubmenu);
-       
+
     }
     else if(submenu.id == "conventionsbutton"){
       var coventionsubmenu = document.querySelector('.subnav-conventions');

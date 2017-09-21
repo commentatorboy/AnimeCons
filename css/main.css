@@ -24,20 +24,17 @@ li {
   list-style: none;
   width: 100%;
   margin: auto;
+  display: none;
 }
 
 .subnav-conventions, .subnav-organisations, .searchbar{
   display: none;
 }
-<<<<<<< HEAD
 .subnav-conventions, .subnav-organisations{
   font-size: 70%;
 }
-=======
->>>>>>> 9dbc52ef7d51d2ddc7717b221be6ba65dbb005b9
 
-li a {
-  display: none;
+li a{
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -53,7 +50,7 @@ li a {
 }
 
 .fa, .fa-arrow-right{
-  display: none;
+  display: inline-block;
 }
 
 /*-------- non mobile version ------- */
