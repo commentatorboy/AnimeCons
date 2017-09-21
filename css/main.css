@@ -74,11 +74,21 @@ li a {
   padding-top: 5%;
 }
 
+.eventcard{
+  width: 80%;
+  margin: auto;
+}
 
+.eventcontent{
+  width: 80%;
+}
+.eventpicture{
+  width: 19%;
+}
 
 /* ------------ footer ------------ */
 
 
 footer{
-  
+
 }
