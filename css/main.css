@@ -1,4 +1,4 @@
-/* General tags*/
+/* ------------------ General tags ------------------ */
 body {
   margin: 0;
 }
@@ -29,7 +29,6 @@ li {
 .subnav, .searchbar{
   display: none;
 }
-
 
 li a {
   display: none;
@@ -94,6 +93,7 @@ li a {
 
 @media screen and (min-width:600px){
   ul{
+    display: flex;
     flex-direction: row;
     width: 100%;
   }
