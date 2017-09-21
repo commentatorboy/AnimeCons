@@ -89,6 +89,22 @@ li a {
   padding: 1%;
 }
 
+/* ------------------- content ------------------- */
+
+
+
+/* -------------------- footer -------------------- */
+
+footer {
+  text-align: center;
+  font-size: 80%;
+  margin-top: 1%;
+}
+
+footer p {
+  margin: 3px;
+}
+
 /* -------------- non mobile version -------------- */
 
 @media screen and (min-width:600px){
@@ -109,14 +125,8 @@ li a {
   .menu{
     display: none;
   }
-}
 
-/* ------------------- content ------------------- */
-
-
-
-/* -------------------- footer -------------------- */
-
-footer{
-
+  footer p {
+    display: inline-block;
+  }
 }
