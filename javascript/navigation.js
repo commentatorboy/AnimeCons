@@ -1,3 +1,9 @@
+/**
+  * TODO
+  * rotate the arrow (or rather change the class of a li)
+  * make the menu block not in nonmobile version (fixed by using display = "" instead of none)
+  *
+*/
 document.addEventListener("DOMContentLoaded", function(event) {
 
   var menubutton = document.getElementById('menubutton');
@@ -16,18 +22,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var liaelement = lia[i];
       expand(liaelement)
     }
-    event.currentTarget.style.display = "block";
+    event.currentTarget.style.display = "";
   }
 
   function expandSubMenu(event){
     var submenu = event.currentTarget;
     if(submenu.id == "organisationsbutton"){
-       var organisationsubmenu = document.querySelector('.subnav-organisations');
-       expand(organisationsubmenu);
+      var organisationsubmenu = document.querySelector('.subnav-organisations');
+      expand(organisationsubmenu);
+      subMenuArrowCheck(submenu.firstElementChild.firstChild);
     }
     else if(submenu.id == "conventionsbutton"){
       var coventionsubmenu = document.querySelector('.subnav-conventions');
       expand(coventionsubmenu);
+      subMenuArrowCheck(submenu.firstElementChild.firstChild);
+
+
     }
   }
 
@@ -41,12 +51,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     else {
       menu.style.display = "none";
-
     }
   }
 
   // check for class with the fa-arrow-right
-  function subMenuArrowCheck(){
-
+  function subMenuArrowCheck(arrow){
+    if(arrow.classList.contains("fa-arrow-right"))
+    {
+      arrow.className = "fa fa-arrow-down";
+    }
+    else {
+      arrow.className = "fa fa-arrow-right";
+    }
   }
 });
