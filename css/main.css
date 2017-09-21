@@ -26,10 +26,12 @@ li {
   margin: auto;
 }
 
-.subnav, .searchbar{
+.subnav-conventions, .subnav-organisations, .searchbar{
   display: none;
 }
-
+.subnav-conventions, .subnav-organisations{
+  font-size: 70%;
+}
 
 li a {
   display: none;
@@ -47,7 +49,9 @@ li a {
 
 }
 
-
+.fa, .fa-arrow-right{
+  display: none;
+}
 
 /*-------- non mobile version ------- */
 @media screen and (min-width:600px){

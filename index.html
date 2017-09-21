@@ -4,6 +4,7 @@
 <head>
   <title>Anime cons - index</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/colorsheme.min.css">
 </head>
@@ -14,8 +15,9 @@
       <li class="menu" id="menubutton">Menu</li>
         <ul>
           <li><a href="#">Frontpage</a></li>
-          <li><a href="#">Organisations</a>
-            <ul class="subnav" id="organisationsbutton">
+          <li class="fa fa-arrow-right" aria-hidden="true" id="organisationsbutton">
+            <a href="#">Organisations</a>
+            <ul class="subnav-organisations" >
               <li><a href="#">The reactor</a></li>
               <li><a href="#">Jpopkai</a></li>
               <li><a href="#">Anime Kita</a></li>
@@ -24,9 +26,9 @@
             </ul>
           </li>
 
-          <li>
-            <a href="#">conventions</a>
-            <ul class="subnav" id="conventionsbutton">
+          <li class="fa fa-arrow-right" aria-hidden="true" id="conventionsbutton">
+            <a href="#">Conventions</a>
+            <ul class="subnav-conventions" >
               <li><a href="#">Genki</a></li>
               <li><a href="#">Jpopcon</a></li>
               <li><a href="#">Anime Kita</a></li>
@@ -34,7 +36,7 @@
               <li><a href="#">Aicon</a></li>
             </ul>
           </li>
-          <li><a href="#">map</a></li>
+          <li><a href="#">Map</a></li>
           <li>
             <div class="searchbar">
               <input type="search" placeholder="Search" name="" value="">
@@ -80,9 +82,14 @@
   </address>
 </footer>
 
+<script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js">
 
+</script>
+<script type="text/javascript" src="javascript/navigation.js">
+
+</script>
 
 <script type="text/javascript" src="javascript/styleselector.js">
-  
+
 </script>
 </html>

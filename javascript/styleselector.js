@@ -1,1 +1,0 @@
-var styleselector = document.findElementById();

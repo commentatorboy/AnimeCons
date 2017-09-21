@@ -1,20 +1,48 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log("loaded");
+
   var menubutton = document.getElementById('menubutton');
   menubutton.onclick = expandMenu;
 
   var conventionsbutton = document.getElementById('conventionsbutton');
-  conventionsbutton.onclick = expandMenu;
+  conventionsbutton.onclick = expandSubMenu;
 
   var organisationsbutton = document.getElementById('organisationsbutton');
-  organisationsbutton.onclick = expandMenu
+  organisationsbutton.onclick = expandSubMenu
 
   function expandMenu(event) {
+    var lia = document.querySelectorAll('li a');
+    for(i = 0; i < lia.length; i++)
+    {
+      var liaelement = lia[i];
+      expand(liaelement)
+    }
+  }
 
-    if (this.style.display == 'none'){
-      this.style.display = 'block';
-    } else {
-      this.style.display = 'none';
+  function expandSubMenu(event){
+    var submenu = event.currentTarget;
+    if(submenu.id == "organisationsbutton"){
+       var organisationsubmenu = document.querySelector('.subnav-organisations');
+       expand(organisationsubmenu);
+       
+    }
+    else if(submenu.id == "conventionsbutton"){
+      var coventionsubmenu = document.querySelector('.subnav-conventions');
+      expand(coventionsubmenu);
+
+    }
+  }
+
+  //the general expand button
+  function expand(menu)
+  {
+    var menudisplay = menu.style.display;
+    if(menudisplay == '' || menudisplay == 'none')
+    {
+      menu.style.display = "block";
+    }
+    else {
+      menu.style.display = "none";
+
     }
   }
 });
