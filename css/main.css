@@ -46,11 +46,15 @@ li a{
   text-transform: uppercase;
   font-weight: bold;
   list-style: none;
-
+  display: block;
 }
 
 .fa, .fa-arrow-right{
   display: inline-block;
+}
+
+#organisationsbutton, #conventionsbutton{
+  display: none;
 }
 
 /*-------- non mobile version ------- */

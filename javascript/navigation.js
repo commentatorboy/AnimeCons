@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var liaelement = lia[i];
       expand(liaelement)
     }
+    event.currentTarget.style.display = "block";
   }
 
   function expandSubMenu(event){
