@@ -77,15 +77,23 @@ li a {
 .eventcard{
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
 }
 
 .eventcontent{
-  width: 80%;
+  order: 1;
 }
 .eventpicture{
-  width: 19%;
+  order: 2;
 }
 
+.eventheader{
+  display: flex;
+  flex-direction: row;
+
+}
 /* ------------ footer ------------ */
 
 
