@@ -11,11 +11,11 @@
 <body>
   <nav class="navigation flex-item">
     <ul>
-      <li class="menu">Menu</li>
+      <li class="menu" id="menubutton">Menu</li>
         <ul>
           <li><a href="#">Frontpage</a></li>
           <li><a href="#">Organisations</a>
-            <ul class="subnav">
+            <ul class="subnav" id="organisationsbutton">
               <li><a href="#">The reactor</a></li>
               <li><a href="#">Jpopkai</a></li>
               <li><a href="#">Anime Kita</a></li>
@@ -26,7 +26,7 @@
 
           <li>
             <a href="#">conventions</a>
-            <ul class="subnav">
+            <ul class="subnav" id="conventionsbutton">
               <li><a href="#">Genki</a></li>
               <li><a href="#">Jpopcon</a></li>
               <li><a href="#">Anime Kita</a></li>
@@ -77,5 +77,6 @@
     <p><a href="https://github.com/commentatorboy/AnimeCons">Our github</a></p>
   </address>
 </footer>
-
+<script type="text/javascript" src="javascript/navigation.js" />
+<script type="text/javascript" src="javascript/styleselector.js"/>
 </html>
