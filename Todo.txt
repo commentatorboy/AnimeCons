@@ -15,3 +15,5 @@ Questions:
 
 - dropdown menu
 - stylechanger (placement)
+- mobile version conv/org menu
+- frontpage layout inconsistency bug

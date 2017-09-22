@@ -7,6 +7,7 @@ body {
 .container {
   padding: 1%;
   padding-top: 5%;
+  text-align: center;
 }
 
 /* ------------------ Navigation ---------------------*/
@@ -114,6 +115,10 @@ li a {
 .eventheader h4, .organisationheader h4 {
   width: 50%;
   padding: 0% 1%;
+}
+
+.eventheader h4:first-child, .organisationheader h4:first-child {
+  text-align: left;
 }
 
 .eventheader h4:last-child, .organisationheader h4:last-child {
