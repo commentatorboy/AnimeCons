@@ -15,10 +15,10 @@
     <ul>
       <li class="menu" id="menubutton">Menu</li>
       <ul>
-        <li><a href="index.html">Frontpage</a></li>
-        <li class="fa fa-arrow-right" aria-hidden="true" id="organisationsbutton">
-          <a href="#">Organisations</a>
-          <ul class="subnav-organisations">
+        <li><a href="#">Frontpage</a></li>
+        <li class="subnav" aria-hidden="true" id="organisationsbutton">
+          <a href="#"><i class="fa fa-arrow-right"></i>Organisations</a>
+          <ul class="subnav-organisations" id="subnav-org">
             <li><a href="#">The reactor</a></li>
             <li><a href="#">Jpopkai</a></li>
             <li><a href="#">Anime Kita</a></li>
@@ -27,9 +27,9 @@
           </ul>
         </li>
 
-        <li class="fa fa-arrow-right" aria-hidden="true" id="conventionsbutton">
-          <a href="conventions.html">Conventions</a>
-          <ul class="subnav-conventions">
+        <li class="subnav" aria-hidden="true" id="conventionsbutton">
+          <a href="conventions.html"><i class="fa fa-arrow-right"></i>Conventions</a>
+          <ul class="subnav-conventions" id="subnav-conv">
             <li><a href="#">Genki</a></li>
             <li><a href="#">Jpopcon</a></li>
             <li><a href="#">Anime Kita</a></li>
@@ -51,22 +51,96 @@
     <h1>Danish conventions overview</h1>
     <article class="">
       <p>There are many anime conventions in Denmark, but this page gives you an easy overview.<br>This way you can plan your conventions without too much effort.</p>
+
       <section>
         <h2>In Zealand</h2>
-        <article class="conventioncard">
-          <img src="images/placeholder.svg" alt="convention logo">
-          <h3>Convention name 1</h3>
-        </article>
+        <div class="organisationsection">
+          <article class="organisationcard">
+            <div class="organisationheader">
+              <h4>Name</h4>
+              <h4>Date</h4>
+            </div>
+            <div class="organisationbody">
+              <section class="organisationinfo">
+                <p>address/lokation</p>
+                <p><a href="#">link</a></p>
+                <p> description</p>
+                <input type="button" value="Read more">
+              </section>
+              <div>
+                <img src="images/placeholder.svg" alt="Some picture here">
+              </div>
+            </div>
+          </article>
+
+          <article class="organisationcard">
+            <div class="organisationheader">
+              <h4>Name</h4>
+              <h4>Date</h4>
+            </div>
+            <div class="organisationbody">
+              <section class="organisationinfo">
+                <p>address/lokation</p>
+                <p><a href="#">link</a></p>
+                <p> description</p>
+                <input type="button" value="Read more">
+              </section>
+              <div>
+                <img src="images/placeholder.svg" alt="Some picture here">
+              </div>
+            </div>
+          </article>
+
+          <article class="organisationcard">
+            <div class="organisationheader">
+              <h4>Name</h4>
+              <h4>Date</h4>
+            </div>
+            <div class="organisationbody">
+              <section class="organisationinfo">
+                <p>address/lokation</p>
+                <p><a href="#">link</a></p>
+                <p> description</p>
+                <input type="button" value="Read more">
+              </section>
+              <div>
+                <img src="images/placeholder.svg" alt="Some picture here">
+              </div>
+            </div>
+          </article>
+
+          <article class="organisationcard">
+            <div class="organisationheader">
+              <h4>Name</h4>
+              <h4>Date</h4>
+            </div>
+            <div class="organisationbody">
+              <section class="organisationinfo">
+                <p>address/lokation</p>
+                <p><a href="#">link</a></p>
+                <p> description</p>
+                <input type="button" value="Read more">
+              </section>
+              <div>
+                <img src="images/placeholder.svg" alt="Some picture here">
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
+
       <section>
         <h2>In Funen</h2>
       </section>
+
       <section>
         <h2>In Jutland</h2>
       </section>
+
     </article>
   </div>
 </body>
+
 <footer>
   <p>Made by: Thomas Goris, Hamun Farzinia.</p>
   <p>Copyright: Thomas Goris, Hamun Farzinia.</p>

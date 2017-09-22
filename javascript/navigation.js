@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   menubutton.onclick = expandMenu;
 
   var conventionsbutton = document.getElementById('conventionsbutton');
-  conventionsbutton.onclick = expandSubMenu;
+  conventionsbutton.onpointerenter = expandSubMenu;
+  conventionsbutton.onpointerleave = expandSubMenu;
 
   var organisationsbutton = document.getElementById('organisationsbutton');
-  organisationsbutton.onclick = expandSubMenu
+  organisationsbutton.onpointerenter = expandSubMenu;
+  organisationsbutton.onpointerleave = expandSubMenu;
 
   function expandMenu(event) {
     var lia = document.querySelectorAll('li');
@@ -36,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var coventionsubmenu = document.querySelector('.subnav-conventions');
       expand(coventionsubmenu);
       subMenuArrowCheck(submenu.firstElementChild.firstChild);
-
-
     }
   }
 
