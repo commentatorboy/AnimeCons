@@ -1,0 +1,10 @@
+{
+  "conventions":{
+    "cexample1":"someUrl",
+    "cexample2":"someOtherUrl"
+  },
+  "organisations": {
+    "oexample1":"someUrl",
+    "oexample2":"someOtherUrl"
+  }
+}
