@@ -1,11 +1,10 @@
 Implementations TODO:
 
- - general organisations page
  - individual org/conv page
  - search feature
  - map
+ - implement map link in nav
  - center headers on index page
- - implement links in nav on index, paste to ALL other pages
 
  Options:
 
