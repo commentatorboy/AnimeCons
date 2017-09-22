@@ -3,8 +3,6 @@ Implementations TODO:
  - individual org/conv page
  - search feature
  - map
- - implement map link in nav
- - center headers on index page
 
  Options:
 
