@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  
+
   <nav class="navigation flex-item">
     <ul>
       <li class="menu" id="menubutton">Menu</li>
@@ -45,7 +45,7 @@
   <div class="container">
 
     <!-- TODO Insert content here! -->
-
+    <div id="map"></div>
   </div>
 </body>
 
@@ -54,8 +54,11 @@
   <p>Copyright: Thomas Goris, Hamun Farzinia.</p>
   <p>Contact: <a href="https://github.com/commentatorboy/AnimeCons">Our github</a></p>
 </footer>
-
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 <script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="javascript/map.js"></script>
 <script type="text/javascript" src="javascript/navigation.js"></script>
 <script type="text/javascript" src="javascript/styleselector.js"></script>
 
