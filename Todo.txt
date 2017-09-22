@@ -1,0 +1,18 @@
+Implementations TODO:
+
+ - general organisations page
+ - individual org/conv page
+ - search feature
+ - map
+ - center headers on index page
+ - implement links in nav on index, paste to ALL other pages
+
+ Options:
+
+ - vue.js
+ - react
+
+Questions:
+
+- dropdown menu
+- stylechanger (placement)
