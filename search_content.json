@@ -1,10 +1,6 @@
 {
-  "conventions":{
     "cexample1":"someUrl",
-    "cexample2":"someOtherUrl"
-  },
-  "organisations": {
+    "cexample2":"someOtherUrl",
     "oexample1":"someUrl",
     "oexample2":"someOtherUrl"
-  }
 }

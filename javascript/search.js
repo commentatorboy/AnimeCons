@@ -16,30 +16,36 @@ function loadJsonFile(){
   }
 }
 
+/* check if keypress was an enter */
 function checkkeypress(e) {
   if(e.keyCode == 13) {
-    loadresult();
+    loadresult(searchbar.value);
   } else {
     searchJSON();
   }
 }
 
 function searchJSON() {
-  var query = searchbar.value;
-  var result = findKeys(jsonfile, query);
+  var result = findKeys(searchbar.value);
+  /* TODO show results underneath searchbar */
 }
 
-function loadresult(){
-
+function loadresult(key){
+  var regex = "/" + key + "/";
+  for (var item in Object.keys(jsonfile)){
+    if(regex.test(item)){
+      window.location.href = jsonfile[item];
+      return;
+    }
+  }
 }
 
-function findKeys(json, key) {
+function findKeys(key) {
   var result = [];
-  for(var item in json){
-    if (!json.hasOwnProperty(item)) continue;
-    if(typeof json[item] == 'object') {
-      result = result.concat(findKeys(json[item], key));
-    } else if (json[item] == key) {
+  var regex = "/" + key + "/";
+  var keys = Object.keys(jsonfile);
+  for (var item in keys) {
+    if(regex.test(item)) {
       result.push(item);
     }
   }
