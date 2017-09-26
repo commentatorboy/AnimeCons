@@ -1,36 +1,31 @@
-var searchbar = document.getElementById('search');
-searchbar.onfocus = loadJsonFile;
-searchbar.onkeypress = checkkeypress;
-var jsonfile;
-
-function loadJsonFile(){
-  var url = 'http://www.hamun.internet-guiden.dk/animecons/search_content.json'
-  var request = new XMLHttpRequest();
-
-  request.open('GET', url);
-  request.responseType = 'json';
-  request.send();
-
-  request.onload = function() {
-    jsonfile = request.response;
-  }
-}
+var searchbar = document.getElementById('mySearch');
+var searchlist = document.getElementById("searchoptions");
+searchbar.onkeyup = checkKeyPress;
+var json = data;
 
 /* check if keypress was an enter */
-function checkkeypress(e) {
+function checkKeyPress(e) {
+  //notice the of the "mySearch" it is the id of the input
   if(e.keyCode == 13) {
-    loadresult(searchbar.value);
+    loadResult(mySearch.value);
   } else {
-    searchJSON();
+    searchJSON(mySearch.value);
   }
 }
 
-function searchJSON() {
-  var result = findKeys(searchbar.value);
-  /* TODO show results underneath searchbar */
+function searchJSON(searchvalue) {
+  var result = findKeys(searchvalue);
+
+  removeList();
+
+  if(searchvalue.length > 0)
+  {
+    createList(result);
+  }
+
 }
 
-function loadresult(key){
+function loadResult(key){
   var regex = "/" + key + "/";
   for (var item in Object.keys(jsonfile)){
     if(regex.test(item)){
@@ -40,13 +35,30 @@ function loadresult(key){
   }
 }
 
-function findKeys(key) {
-  var result = [];
-  var regex = "/" + key + "/";
-  var keys = Object.keys(jsonfile);
-  for (var item in keys) {
-    if(regex.test(item)) {
-      result.push(item);
-    }
+function findKeys(query) {
+  return json.conventions.filter(function(el) {
+    return el.id.toLowerCase().indexOf(query.toLowerCase()) > -1;
+  });
+
+}
+
+//remove the search results everytime you press a key
+function removeList(){
+  searchlist.innerHTML = '';
+}
+
+function createList(result){
+  //check if there is something in the list
+
+  var entry = document.createElement('li');
+  //go through each element in the list/object
+  for(var i = 0; i < result.length; i++ )
+  {
+    var item = result[i];
+    var textnode = document.createTextNode(item.id);
+    entry.appendChild(textnode);
+    searchlist.appendChild(entry);
+
   }
+
 }
