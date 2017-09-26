@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var menudisplay = menu.style.display;
     if(menudisplay == '' || menudisplay == 'none')
     {
-      menu.style.display = "block";
+      menu.style.display = "inline-block";
     }
     else {
       menu.style.display = "none";

@@ -12,9 +12,9 @@
 <body>
 
   <nav class="navigation flex-item">
-    <ul>
+    <ul class="navcontainer">
       <li class="menu" id="menubutton">Menu</li>
-      <ul>
+      <ul class="secondul">
         <li><a href="index.html">Frontpage</a></li>
         <li class="subnav" aria-hidden="true" id="organisationsbutton">
           <a href="organisations-alphabet.html"><i class="fa fa-arrow-right"></i>Organisations</a>
@@ -33,18 +33,19 @@
           </ul>
         </li>
         <li><a href="map.html">Map</a></li>
-        <li>
-          <div class="searchbar">
-            <input type="search" placeholder="Search" name="" value="">
-          </div>
-        </li>
       </ul>
+      <div class="searchbar">
+        <input id="search" type="search" placeholder="Search">
+        <ul id="searchoptions" class="searchoptions">
+          <li>Some stuff</li>
+          <li>Some thing</li>
+          <li>third option</li>
+        </ul>
+      </div>
     </ul>
   </nav>
 
   <div class="container">
-
-    <!-- TODO Insert content here! -->
     <div id="map"></div>
   </div>
 </body>
@@ -55,7 +56,7 @@
   <p>Contact: <a href="https://github.com/commentatorboy/AnimeCons">Our github</a></p>
 </footer>
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?callback=initMap">
 </script>
 <script type="text/javascript" src="javascript/jquery-3.2.1.slim.min.js"></script>
 <script type="text/javascript" src="javascript/map.js"></script>

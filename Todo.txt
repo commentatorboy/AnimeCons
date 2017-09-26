@@ -1,9 +1,7 @@
 Implementations TODO:
-
  - individual org/conv page
  - search feature
  - map
- - tweak navigation (external dropdown)
 
  Options:
 
@@ -15,5 +13,4 @@ Questions:
 - dropdown menu
 - stylechanger (placement)
 - mobile version conv/org menu
-- frontpage layout inconsistency bug
-- grunt or gulp (hiding google API key)
+- gulp (hiding google API key)
