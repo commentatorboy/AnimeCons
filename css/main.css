@@ -44,6 +44,7 @@ nav li {
 
 .subnav {
   display: none;
+  margin: 0;
 }
 
 .subnav-conventions, .subnav-organisations, .searchbar {
