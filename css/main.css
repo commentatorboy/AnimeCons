@@ -25,6 +25,12 @@ ul {
   margin: 0;
 }
 
+
+.navcontainer-second-li{
+  display: block;
+}
+
+
 nav li {
   text-align: center;
   list-style: none;
@@ -32,6 +38,9 @@ nav li {
   margin: auto;
   display: none;
 }
+
+
+
 
 .subnav {
   display: none;
@@ -61,12 +70,15 @@ li a {
   display: block;
 }
 
-@media screen and (min-width:600px){
+.navcontainer{
+  width: 80%;
+}
+
+@media screen and (min-width:651px){
 
   nav li {
     display: inline-block;
     font-size: 10px;
-    border-right: 1px solid black;
     margin: 8px 0px;
     width: auto;
   }
@@ -86,6 +98,8 @@ li a {
 
   .subnav {
     display: inline-block;
+    border-right: 1px solid black;
+
   }
 
   .subnav-conventions li, .subnav-organisations li{
@@ -104,12 +118,12 @@ li a {
 
   .searchbar {
     display: inline-block;
-    margin: 8px 0px;
+  }
+  .li-search{
     float: right;
   }
 
   .navcontainer {
-    width: 80%;
     margin: auto;
   }
 }

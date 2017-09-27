@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   organisationsbutton.onpointerleave = expandSubMenu;
 
   function expandMenu(event) {
-    var lia = document.querySelectorAll('.secondul > li');
+    var lia = document.querySelectorAll('.secondul > li, .navcontainer-second-li');
+
     for (i = 0; i < lia.length; i++) {
       var liaelement = lia[i];
       expand(liaelement);
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var lia = document.querySelectorAll('.subnav');
     for (i = 0; i < lia.length; i++) {
       var liaelement = lia[i];
-      if (window.matchMedia("(min-width: 600px)").matches) {
+      if (window.matchMedia("(min-width: 651px)").matches) {
         if (liaelement.style.display == "none") {
           expand(liaelement);
         }
