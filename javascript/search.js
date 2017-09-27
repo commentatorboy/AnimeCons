@@ -49,9 +49,9 @@ function removeList() {
 function createList(result) {
   //check if there is something in the list
 
-  var entry = document.createElement('li');
   //go through each element in the list/object
   for (var i = 0; i < result.length; i++) {
+    var entry = document.createElement('li');
     var item = result[i];
     var textnode = document.createTextNode(item.id);
     entry.appendChild(textnode);

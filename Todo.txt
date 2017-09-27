@@ -1,7 +1,6 @@
 Implementations TODO:
  - individual org/conv page
- - search feature
- - map
+ - Json file content
 
  Options:
 
@@ -9,8 +8,3 @@ Implementations TODO:
  - react
 
 Questions:
-
-- dropdown menu
-- stylechanger (placement)
-- mobile version conv/org menu
-- gulp (hiding google API key)

@@ -5,8 +5,12 @@ body {
 }
 
 .container {
-  padding-top: 5%;
+  padding-top: 40px;
   text-align: center;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 /* ------------------ Navigation ---------------------*/
@@ -215,7 +219,7 @@ li a {
 
 #map {
   width: 80%;
-  height: 600px;
+  height: 560px;
   margin:auto;
   background-color: grey;
 }
@@ -225,17 +229,15 @@ li a {
 .searchoptions {
   display: none;
   position: absolute;
-  top: 35px;
 }
 
 .searchoptions li {
-  margin: 0;
+  margin: 4px 0px;
   text-align: left;
-  margin: auto;
-  padding: 2px;
+  padding: 0px 10px;
   color: black;
-  border: 1px solid white;
   width: 100%;
+  font-size: 14px;
 }
 
 @media screen and (min-width:600px) {
