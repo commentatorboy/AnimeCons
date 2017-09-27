@@ -27,7 +27,7 @@ ul {
 
 
 .navcontainer-second-li{
-  display: block;
+  display: inline-block;
 }
 
 
@@ -38,10 +38,9 @@ nav li {
   margin: auto;
   display: none;
 }
-
-
-
-
+.navcontainer-second-li{
+  display: none;
+}
 .subnav {
   display: none;
   margin: 0;
@@ -72,7 +71,10 @@ li a {
 }
 
 .navcontainer{
-  width: 80%;
+  width: 100%;
+}
+.fa{
+  display:none;
 }
 
 @media screen and (min-width:651px){
@@ -126,6 +128,11 @@ li a {
 
   .navcontainer {
     margin: auto;
+    width: 80%;
+  }
+
+  .navcontainer-second-li{
+    display: inline-block;
   }
 }
 

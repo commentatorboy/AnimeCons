@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function checkMenu() {
 
-    var lia = document.querySelectorAll('.subnav');
+    var lia = document.querySelectorAll('.subnav, .navcontainer-second-li');
     for (i = 0; i < lia.length; i++) {
       var liaelement = lia[i];
       if (window.matchMedia("(min-width: 651px)").matches) {
