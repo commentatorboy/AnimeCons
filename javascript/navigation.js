@@ -64,19 +64,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   window.onresize = checkMenu;
 
   function checkMenu() {
-    if (window.matchMedia("(min-width: 600px)").matches) {
-      var lia = document.querySelectorAll('.secondul > li');
-      for (i = 0; i < lia.length; i++) {
-        var liaelement = lia[i];
+
+    var lia = document.querySelectorAll('.subnav');
+    for (i = 0; i < lia.length; i++) {
+      var liaelement = lia[i];
+      if (window.matchMedia("(min-width: 600px)").matches) {
         if (liaelement.style.display == "none") {
           expand(liaelement);
         }
-      }
-    } else {
-      var lia = document.querySelectorAll('.secondul > li');
-      for (i = 0; i < lia.length; i++) {
-        var liaelement = lia[i];
-        if (liaelement.style.display != "none") {
+      } else {
+        if (liaelement.style.display == "block") {
           expand(liaelement);
         }
       }

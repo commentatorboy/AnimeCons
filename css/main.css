@@ -33,7 +33,7 @@ nav li {
   display: none;
 }
 
-.subnav{
+.subnav {
   display: none;
 }
 
@@ -71,7 +71,7 @@ li a {
     width: auto;
   }
 
-  nav li:last-child {
+  .secondul li:last-child {
     border: none;
   }
 
