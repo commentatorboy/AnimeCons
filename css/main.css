@@ -29,11 +29,9 @@ ul {
   margin: 0;
 }
 
-
-.navcontainer-second-li{
+.navcontainer-second-li {
   display: inline-block;
 }
-
 
 nav li {
   text-align: center;
@@ -42,9 +40,11 @@ nav li {
   margin: auto;
   display: none;
 }
-.navcontainer-second-li{
+
+.navcontainer-second-li {
   display: none;
 }
+
 .subnav {
   display: none;
   margin: 0;
@@ -74,10 +74,11 @@ li a {
   display: block;
 }
 
-.navcontainer{
+.navcontainer {
   width: 100%;
 }
-.fa{
+
+.fa {
   display:none;
 }
 
@@ -109,7 +110,7 @@ li a {
 
   }
 
-  .subnav-conventions li, .subnav-organisations li{
+  .subnav-conventions li, .subnav-organisations li {
     font-size: 7px;
     display: block;
   }
@@ -118,7 +119,7 @@ li a {
     display: inline-block;
   }
 
-  .fa, .fa-arrow-right {
+  .fa, .fa-arrow-right, .fa-arrow-down {
     display: inline;
     padding-right: 2px;
   }
@@ -126,7 +127,8 @@ li a {
   .searchbar {
     display: inline-block;
   }
-  .li-search{
+
+  .li-search {
     float: right;
   }
 
@@ -135,7 +137,7 @@ li a {
     width: 80%;
   }
 
-  .navcontainer-second-li{
+  .navcontainer-second-li {
     display: inline-block;
   }
 }
@@ -184,7 +186,7 @@ li a {
   display: none;
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:600px) {
 
   .organisationsection {
     display: flex;
